@@ -1,0 +1,1 @@
+# itch-exclude-genre
