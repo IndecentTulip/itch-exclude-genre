@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Negative Filter</title>
+  <link rel="stylesheet" href="popup.css"/>
+<style>
+body{
+  background: #181a1b;
+  color: #e8e6e3;
+}
+#genre-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px 10px;
+  margin: 10px 20px;
+  background: inherit;
+  color: inherit;
+}
+#genre-list .pattern-button{
+  background: inherit;
+  color: inherit;
+  font-size: 14px;
+  display: flex;
+  height: 30px;
+  box-sizing: border-box;
+  border: 1px solid;
+    border-top-color: currentcolor;
+    border-right-color: currentcolor;
+    border-bottom-color: currentcolor;
+    border-left-color: currentcolor;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  padding: 0 8px;
+  align-items: center;
+}
+
+.filter-button{
+  background: inherit;
+  color: inherit;
+  font-size: 14px;
+  border: 1px solid;
+  text-decoration: none;
+  align-items: center;
+}
+
+.patterns-list{
+  background: inherit;
+  color: inherit;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+  <h1>Genres on the screen</h1>
+
+  <div id="genre-list">
+  </div>
+  <hr />
+
+  <h1>Remove Patters: </h1>
+
+  <div id="patterns-list">
+
+  </div>
+
+  <hr />
+  <button class="filter-button" id="test">Remove</button>
+  <script src="popup.js"></script>
+</body>
+</html>

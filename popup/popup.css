@@ -1,0 +1,17 @@
+body {
+  background: black;
+}
+#genre-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px 10px;
+  margin: 10px 20px;
+}
+#genre-list .pattern-button{
+  color: #606060;
+  font-size: 14px;
+  display: flex;
+  height: 30px;
+  box-sizing: border-box;
+}
