@@ -2,15 +2,15 @@
   "manifest_version": 2,
   "name": "Remove Genre On Itch",
   "version": "1.0",
-
   "description": "looks though all the genres on the page, lists them and let's you remove elements on the page based on the list. Made this becase there is no way to have Negative tags / Tag exclusion on itch",
-
   "permissions": ["activeTab"],
-
   "browser_action": {
     "default_icon": "icons/remove-icon.png",
     "default_title": "genre remover",
-    "default_popup": "popup/popup.html"
+    "default_popup": "popup.html"
+  },
+  "icons":{
+    "48": "icons/remove-icon.png"
   },
   "content_scripts": [
     {
@@ -18,11 +18,9 @@
       "js": ["content.js"]
     }
   ],
-  
   "background": {
     "scripts": ["background.js"],
     "persistent": false 
   }
 
 }
-
